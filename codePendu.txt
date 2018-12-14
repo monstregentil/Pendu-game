@@ -1,0 +1,40 @@
+public class Pendu{
+  
+  public static void main(String[] args){
+    char[]mot = new char [14] ;
+    mot = MOOC.motAuSort() ;
+    char[]tiret = new char [14] ;
+    char lettre ;
+    int nbtiret = 0;
+    for (int i=0 ; i<14 ; i = i+1){
+      if (mot[i]!=' '){
+        tiret[i] = '-';
+        nbtiret = nbtiret + 1 ;
+      }else{
+        tiret[i] = ' ' ;
+      }
+    }
+    for (int j=0 ; j<14 ; j=j+1){
+      System.out.print(tiret[j]);
+    }
+   
+    System.out.println();
+    while (nbtiret != 0){
+      
+      System.out.print("Quelle lettre ?");
+      lettre = MOOC.readChar();
+    
+      for (int k=0 ; k<14 ; k=k+1){
+        if (lettre == mot[k]){
+          tiret[k] = mot[k];
+          nbtiret = nbtiret - 1;
+        } 
+      }
+      System.out.print(tiret);
+      System.out.println();
+    }
+    if (nbtiret == 0){
+      System.out.println ("Bravo !");
+    }
+  }
+}
