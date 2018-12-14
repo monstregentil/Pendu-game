@@ -14,3 +14,5 @@ Le jeu s'arrête quand :
 - le dessin du pendu est terminé.
 
 Le jeu créé ici ne prend pas en compte le dessin et le joueur peut proposer des lettres à volonté.
+
+Je rajoute du texte pour modifier le fichier.
