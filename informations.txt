@@ -1,0 +1,3 @@
+Utilisation de for, while et if avec un for imbriqué dans un while.
+
+PS : je débute en java !
